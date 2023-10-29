@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ .wrapper{
+    height: 100vh;
+    overflow-x: hidden; 
+    overflow-y: auto;
+    perspective: 1px;   
+ }
+
+ .container{
+     position: relative; 
+     display: flex;
+     height: 100%;
+     z-index: -1;
+     justify-content: center;
+     align-items: center;
+     transform-style: preserve-3d;
+
+ }
+ .background,.foreground{
+    position:  absolute;
+    z-index: -1;
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+
+ }
+ .background{
+    transform:  translateZ(-30px)  scale(34);
+ }
+ .foreground{
+    transform: translateZ(-15px) scale(17);
+
+ }
+
+ 
